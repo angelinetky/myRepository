@@ -37,7 +37,7 @@ public class Calculator {
 	/**
 	 * Math calculation
 	 * @param calString
-	 * @return
+	 * @return double
 	 */
 	private static double doMath(String calString) {
 
@@ -74,7 +74,7 @@ public class Calculator {
 	 * Check the Operator precedence
 	 * The method will reconstruct a new sum string by adding brackets to precedence combination
 	 * @param sum
-	 * @return
+	 * @return String
 	 */
 	private static String checkOpPreced(String inputStr) {
 		String[] inputString = inputStr.split("\\s");
@@ -115,7 +115,7 @@ public class Calculator {
 	 * Method to determine type of Math Operation, based on operator
 	 * @param number
 	 * @param operator
-	 * @return
+	 * @return BigDecimal
 	 */
 	private static BigDecimal MathOperation(BigDecimal firstNum, BigDecimal secondNum, String operator) {
 		BigDecimal result = new BigDecimal("0.00");
